@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+header{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 60px 100px 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-family: "Emilys Candy", serif ;
+    font-size: 64px;
+    font-weight: 900;
+    color: #973a59;
+}
+
+
+.logo-menu{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.logo-menu a{
+    color: rgb(185, 98, 132);
+    font-size: 28px;
+    font-weight: 600;
+    
+}
+
+.logo-menu a:hover{
+    color: #973a59;
+}
+
+.lang{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+} 
+
+.burger-menu-btn{
+    background: transparent;
+    padding: 0;
+    display: none;
+}
+
+.burger-menu a{
+    color: rgb(185, 98, 132);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.burger-menu a:hover{
+    color: #973a59;
+}
+#burger-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 100px;
+    gap: 30px;
+    background: white;
+    height: 100%;
+    box-shadow: 0px 0px 10px black;
+    transition: 1s;
+}
+
+#burger-menu-close{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.burger-menu-close, 
+.hero-button,
+.contact-button{
+    background:#973a59 ;
+    color: white;
+    border: none;
+    padding: 10px 80px;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.hero{
+    height: 880px;
+    background: url(../images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 139px;
+}
+
+.hero-choose{
+    padding: 24px 20px;
+    width: 365px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-choose:nth-child(1){
+    background: #7B7B7B;
+}
+.hero-choose:nth-child(2){
+    background: #4d4b4b;
+}
+.hero-choose:nth-child(3){
+    background: #313030;
+}
+.hero-choose h4{
+    line-height: 160%;
+}
+
+.hero-choose select{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+button:hover{
+    filter: brightness(0.8);
+}
+.hero button{
+    height: 100px;
+    padding: 20px;
+}
+
+.about-us {
+    margin: 50px auto;
+    max-width: 1080px;
+    padding:0px 30px;
+    line-height: 1.3;
+    text-align: center;
+}
+h2{
+font-size: 64px;
+color: rgb(185, 98, 132);
+font-weight: 700;
+line-height: 1.3;
+text-align: center;
+}
+.about-us p{
+    margin: 30px 0px;
+}
+
+.our-events{
+    margin: 50px auto;
+    text-align: center;
+    padding:0px 30px;
+    line-height: 1.3;
+    text-align: center;
+}
+.our-events h2{
+    margin: 100px auto;
+    padding: 0px 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.slider {
+ position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+}
+
+.slider-items {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.slider-photo {
+  flex:0 0 auto;
+  width: 367px;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #973a59;
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+  background-color: #973a59;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+.description-day{
+    margin: 30px auto;
+    max-width: 1080px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+
+.description-day h4{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.description-day p{
+text-align: center;
+line-height: 1.3;
+margin: 5px;
+}
+
+.contact-us{
+    max-width: 940px;
+    margin: 50px auto;
+    padding:0px 30px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.contact-form-field{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:60px;
+    margin-top: 100px;
+}
+
+.contact-form-field input{
+border: none;
+border-bottom: 1px solid black;
+padding: 10px 0px;
+outline: none;
+}
+.contact-form textarea{
+    resize: none;
+    height: 100px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.contact-form button{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+.footer{
+    padding: 60px;
+    background: #611c33;
+    color: white;
+}
+
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    
+.footer-logo h3{
+    font-family: "Emilys Candy", serif ;
+    font-size: 64px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    
+}
+.footer-logo p{
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #c2c1c1;
+}
+.footer-body-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-link{
+    font-weight: 600;
+    color: white;
+    font-size: 32px;
+}
+
+.footer-link:hover{
+    color:  #973a59;
+}
+
+.footer-social-media p{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.footer-social-media-row{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin:30px;
+}
+
+.footer-social-media-row img:hover{
+  filter: brightness(50%);
+}
+
+@media screen and (max-width: 1040px){
+    .footer-logo p, .footer-body-links ul{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .burger-menu-btn{
+    display: block;}
+    .logo-menu{
+        display: none;}
+}
+@media screen and (max-width: 870px){
+ .slider-photo {
+    width: 220px;
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 768px){
+    .hero{
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.hero button, .hero-choose{
+    width: max(60%);}
+
+.contact-form-field{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+.contact-form{
+    gap: 30px;
+}
+.footer-social-media p{
+    font-size: 18px;
+
+}
+.footer-social-media-row{
+    gap: 80px;
+    margin: 15px;
+}
+}
+@media screen and (max-width: 600px){
+.footer-social-media p{
+    font-size: 14px;
+}
+.footer-social-media-row{
+    gap: 40px;
+    margin: 10px;
+}
+.footer-logo h3{
+    font-size: 48px;
+}
+}
+
+@media screen and (max-width: 550px){
+    h2{
+font-size: 48px;}
+}
+
+@media screen and (max-width: 490px){
+    
+    .slider-photo {
+    width: 160px;
+    margin-right: 10px;
+  }
+    .footer-social-media p{
+    font-size: 12px;
+}
+.footer-social-media-row{
+    gap: 30px;
+    margin: 10px;
+}
+.footer-logo h3{
+    font-size: 32px;
+}
+}
+
+@media screen and (max-width: 450px){
+
+    header{
+        padding: 30px;
+    }
+    .logo{
+        font-size: 30px;}
+}
