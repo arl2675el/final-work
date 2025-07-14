@@ -450,3 +450,22 @@ font-size: 48px;}
     .logo{
         font-size: 30px;}
 }
+
+@media screen and (max-width: 390px){
+     h2{
+font-size: 36px;}
+.footer-social-media{
+    display: none;
+}
+.footer-row{
+    display: block;
+}
+.footer-logo h3{
+    font-size: 32px;
+    text-align: center;
+}
+.slider-photo {
+    width: 300px;
+    margin-right: 20px;
+  }
+}
